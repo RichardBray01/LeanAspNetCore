@@ -35,12 +35,6 @@ namespace LeanAspNetCore
         {
             if (env.IsDevelopment())
             {
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
-                {
-                    ProjectPath = Path.Combine(Directory.GetCurrentDirectory(), "clientapp"),
-                    HotModuleReplacement = true
-                });
-
                 app.UseDeveloperExceptionPage();
             }
             else
