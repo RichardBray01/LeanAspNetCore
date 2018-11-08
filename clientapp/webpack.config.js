@@ -1,5 +1,7 @@
 const path = require('path');
+
 module.exports = (env = {}, argv = {}) => {
+
     const config = {
         mode: argv.mode || 'development', // we default to development when no 'mode' arg is passed
         entry: {
